@@ -46,6 +46,9 @@
                             50: '#fffbeb',
                             600: '#d97706',
                             700: '#b45309'
+                        },
+                        rose: {
+                            600: '#e11d48'
                         }
                     }
                 }
@@ -209,8 +212,8 @@
                 </p>
             </div>
 
-            <!-- 4 Grid Service Modules -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- 5 Grid Service Modules (Separating Cloud POS Transition and Plaid Ledger) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- Module A -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between space-y-4 shadow-sm hover:shadow-md hover:border-emerald-300 transition">
@@ -263,16 +266,33 @@
                     </button>
                 </div>
 
-                <!-- Module D -->
+                <!-- Module D (Cloud POS Transition as a Service - Separated) -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between space-y-4 shadow-sm hover:shadow-md hover:border-emerald-300 transition">
                     <div class="space-y-2">
                         <div class="flex justify-between items-center">
                             <span class="text-[9px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">MODULE D</span>
+                            <span class="text-sm font-extrabold text-emerald-700">Custom Scope</span>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 font-serif">Cloud POS Transition Service</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Migrating legacy local shop data and historical customer records to modern cloud-based shop management platforms like Tekmetric or Shopmonkey as a managed professional service.
+                        </p>
+                    </div>
+                    <button onclick="executeTaasAction('pos')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow">
+                        <i class="fa-solid fa-cloud-arrow-up mr-1.5"></i> Schedule POS Migration
+                    </button>
+                </div>
+
+                <!-- Module E (Plaid Sweep Ledger - Separated) -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between space-y-4 shadow-sm hover:shadow-md hover:border-emerald-300 transition">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[9px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">MODULE E</span>
                             <span class="text-sm font-extrabold text-emerald-700">$149/mo</span>
                         </div>
                         <h3 class="text-base font-bold text-slate-900 font-serif">Plaid Sweep Ledger</h3>
                         <p class="text-xs text-slate-600 leading-relaxed">
-                            Connects POS register endpoints to Plaid checking accounts, running automated nightly split sweeps for rent floors with zero manual invoicing.
+                            Connects POS register endpoints directly to Plaid checking accounts, running automated nightly split sweeps for rent floors with zero manual invoicing.
                         </p>
                     </div>
                     <button onclick="executeTaasAction('ledger')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow">
@@ -402,7 +422,7 @@
                         <h3 class="text-sm font-bold uppercase tracking-wider font-serif">Owner Solution: Retaining Real Estate & Passive Income</h3>
                     </div>
                     <p class="text-xs text-slate-600 leading-relaxed">
-                        As Arthur (Retiring Owner), you preserve 100% of your real estate property and hydraulic lifts under <strong>AssetCo</strong> while collecting a guaranteed retirement floor backed by UCC-1 equipment liens and Mitchell 1 software escrow locks.
+                        As Arthur (Retiring Owner), you preserve 100% of your real estate property and hydraulic lifts under <strong>AssetCo</strong> while collecting a guaranteed retirement floor backed by UCC-1 equipment liens and cloud POS software escrow locks.
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 text-xs">
                         <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
@@ -415,7 +435,7 @@
                         </div>
                         <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
                             <span class="text-[9px] font-mono text-slate-400 uppercase block font-bold">Software Escrow</span>
-                            <span class="text-slate-900 font-bold block mt-1">Mitchell 1 Admin Custody</span>
+                            <span class="text-slate-900 font-bold block mt-1">Cloud POS Admin Custody</span>
                         </div>
                     </div>
                 </div>
@@ -472,6 +492,18 @@
                     <h3 class="text-sm font-serif font-bold text-slate-900">AssetCo / OpCo LLC Corporate Split</h3>
                     <p class="text-xs text-slate-600 leading-relaxed">
                         Retiring owner's real estate and hydraulic lifts secured under AssetCo. Operator's new operating entity (Santa Clara Auto Pros LLC) incorporated with zero liability bleed.
+                    </p>
+                </div>
+
+                <!-- Step 2.5: Private Equity & Valuation Criteria (Enhanced with key buying signals and multi-x purchasing multiples) -->
+                <div class="bg-emerald-950 text-emerald-100 border border-emerald-800 rounded-2xl p-6 space-y-4 shadow-md">
+                    <div class="flex justify-between items-center">
+                        <span class="text-[9px] font-mono font-bold bg-emerald-800 text-emerald-200 px-2.5 py-0.5 rounded">INSTITUTIONAL CRITERIA</span>
+                        <span class="text-xs font-mono text-emerald-400 font-bold">PE ACQUISITION READINESS</span>
+                    </div>
+                    <h3 class="text-base font-serif font-bold text-white">Private Equity Acquisition Standards & Purchasing Multiples</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Institutional buyers and private equity firms evaluate several critical success factors before committing to a buyout: <strong>clean auditable financial records, system-driven cloud operations (such as Tekmetric or Shopmonkey), clear separation of real estate assets (AssetCo), and low founder dependency</strong>[cite: 1]. When a business fits these strict private equity criteria, the purchasing multiple commands <strong>many x EBITDA</strong>, maximizing enterprise exit value.
                     </p>
                 </div>
 
@@ -625,6 +657,9 @@
                     break;
                 case 'sublease':
                     triggerModal("DIY Sublease Contract ($399)", "State-compliant commercial sublease generated with trade warranties, UCC-1 lift covenants, and mandatory CPA retention clauses.", "fa-solid fa-file-contract text-emerald-600");
+                    break;
+                case 'pos':
+                    triggerModal("Cloud POS Transition Service", "Cloud migration workflow initialized. Legacy local databases and customer history scheduled for syncing to Tekmetric or Shopmonkey cloud infrastructure.", "fa-solid fa-cloud-arrow-up text-emerald-600");
                     break;
                 case 'ledger':
                     triggerModal("Plaid Sweep Ledger ($149/mo)", "Plaid bank link bonded to OpCo checking account. Automated nightly split sweeps configured successfully for shop rent floors.", "fa-solid fa-link text-emerald-600");
