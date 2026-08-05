@@ -153,11 +153,11 @@
                 </div>
 
                 <div id="sector-action-buttons" class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 max-w-2xl mx-auto">
-                    <button onclick="switchView('taas')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs p-4 rounded-xl transition shadow-md uppercase tracking-wider flex flex-col items-center justify-center gap-1.5 text-center">
+                    <button onclick="switchView('taas')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs p-4 rounded-xl transition shadow-md uppercase tracking-wider flex flex-col items-center justify-center gap-1.5 text-center cursor-pointer">
                         <span class="flex items-center gap-1.5"><i class="fa-solid fa-screwdriver-wrench"></i> Option 1: TaaS / SaaS Suite</span>
                         <span class="text-[10px] font-normal tracking-normal text-emerald-100 normal-case">Click this if you are just preparing for transition</span>
                     </button>
-                    <button onclick="switchView('marketplace')" class="bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs p-4 rounded-xl border border-slate-300 transition uppercase tracking-wider shadow-sm flex flex-col items-center justify-center gap-1.5 text-center">
+                    <button onclick="switchView('marketplace')" class="bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs p-4 rounded-xl border border-slate-300 transition uppercase tracking-wider shadow-sm flex flex-col items-center justify-center gap-1.5 text-center cursor-pointer">
                         <span class="flex items-center gap-1.5"><i class="fa-solid fa-store text-emerald-600"></i> Option 2: Operator Match</span>
                         <span class="text-[10px] font-normal tracking-normal text-slate-500 normal-case">I'm ready for transition, find me an operator</span>
                     </button>
@@ -214,7 +214,7 @@
                             Owner uploads QuickBooks or tax summaries. Our computer vision engine parses financial statements, normalizes personal expenses, and outputs a masked, bank-ready verified profit report.
                         </p>
                     </div>
-                    <button onclick="executeTaasAction('audit')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow">
+                    <button onclick="executeTaasAction('audit')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow cursor-pointer">
                         <i class="fa-solid fa-cloud-arrow-up mr-1.5"></i> Run AI Forensic Audit
                     </button>
                 </div>
@@ -230,7 +230,7 @@
                             Restructures sole-prop entities into an AssetCo / OpCo split. Isolates physical real estate, building deeds, and lifts from active operating garage liabilities.
                         </p>
                     </div>
-                    <button onclick="executeTaasAction('shield')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow">
+                    <button onclick="executeTaasAction('shield')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow cursor-pointer">
                         <i class="fa-solid fa-shield-halved mr-1.5"></i> Incorporate AssetCo Shield
                     </button>
                 </div>
@@ -246,7 +246,7 @@
                             Generates state-compliant commercial lease covenants with specialized trade warranties, split indemnity clauses, and mandatory CPA retention bindings.
                         </p>
                     </div>
-                    <button onclick="executeTaasAction('sublease')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow">
+                    <button onclick="executeTaasAction('sublease')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow cursor-pointer">
                         <i class="fa-solid fa-file-contract mr-1.5"></i> Generate Sublease Pack
                     </button>
                 </div>
@@ -262,7 +262,7 @@
                             Migrating legacy local shop data and historical customer records to modern cloud-based shop management platforms like Tekmetric or Shopmonkey as a managed professional service.
                         </p>
                     </div>
-                    <button onclick="executeTaasAction('pos')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow">
+                    <button onclick="executeTaasAction('pos')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow cursor-pointer">
                         <i class="fa-solid fa-cloud-arrow-up mr-1.5"></i> Schedule POS Migration
                     </button>
                 </div>
@@ -278,7 +278,7 @@
                             Connects POS register endpoints directly to Plaid checking accounts, running automated nightly split sweeps for rent floors with zero manual invoicing.
                         </p>
                     </div>
-                    <button onclick="executeTaasAction('ledger')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow">
+                    <button onclick="executeTaasAction('ledger')" class="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 py-2.5 rounded-xl text-xs font-bold transition uppercase tracking-wider shadow cursor-pointer">
                         <i class="fa-solid fa-link mr-1.5"></i> Bond Plaid Sweep Ledger
                     </button>
                 </div>
@@ -297,7 +297,7 @@
                         Browse active, verified profitable physical storefronts seeking expert operational leadership. Click any listing to review audited financials and initiate a match.
                     </p>
                 </div>
-                <button onclick="triggerModal('List Your Business', 'Owner intake portal opened. Submit your BAR registry and P&L to generate your Verified Financials badge.', 'fa-solid fa-circle-plus text-emerald-600')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition uppercase tracking-wider shadow flex-shrink-0">
+                <button onclick="triggerModal('List Your Business', 'Owner intake portal opened. Submit your BAR registry and P&L to generate your Verified Financials badge.', 'fa-solid fa-circle-plus text-emerald-600')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition uppercase tracking-wider shadow flex-shrink-0 cursor-pointer">
                     List Your Business
                 </button>
             </div>
@@ -320,7 +320,7 @@
                         </div>
                     </div>
                     <div class="p-4 bg-slate-50 border-t border-slate-200">
-                        <button onclick="initiateMatch('Silicon Valley 4-Bay Auto Repair', 'asking floor $6,000/mo + profit share')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 rounded-xl transition uppercase tracking-wider shadow">
+                        <button onclick="initiateMatch('Silicon Valley 4-Bay Auto Repair', 'asking floor $6,000/mo + profit share')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 rounded-xl transition uppercase tracking-wider shadow cursor-pointer">
                             Apply & Request Match
                         </button>
                     </div>
@@ -342,7 +342,7 @@
                         </div>
                     </div>
                     <div class="p-4 bg-slate-50 border-t border-slate-200">
-                        <button onclick="triggerModal('Sector In Development', 'Laundromat sector onboarding is currently in private pilot phase. Join the waitlist!', 'fa-solid fa-clock text-amber-600')" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs py-2.5 rounded-xl transition">
+                        <button onclick="triggerModal('Sector In Development', 'Laundromat sector onboarding is currently in private pilot phase. Join the waitlist!', 'fa-solid fa-clock text-amber-600')" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs py-2.5 rounded-xl transition cursor-pointer">
                             Join Sector Waitlist
                         </button>
                     </div>
@@ -364,7 +364,7 @@
                         </div>
                     </div>
                     <div class="p-4 bg-slate-50 border-t border-slate-200">
-                        <button onclick="triggerModal('Sector In Development', 'HVAC trade fleet onboarding is currently in private pilot phase. Join the waitlist!', 'fa-solid fa-clock text-amber-600')" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs py-2.5 rounded-xl transition">
+                        <button onclick="triggerModal('Sector In Development', 'HVAC trade fleet onboarding is currently in private pilot phase. Join the waitlist!', 'fa-solid fa-clock text-amber-600')" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs py-2.5 rounded-xl transition cursor-pointer">
                             Join Sector Waitlist
                         </button>
                     </div>
@@ -385,8 +385,8 @@
                     </p>
                 </div>
                 <div class="flex p-1 bg-slate-100 rounded-xl border border-slate-200 shadow-sm">
-                    <button onclick="switchJourneyRole('owner')" id="role-btn-owner" class="px-4 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white shadow transition">Owner Perspective</button>
-                    <button onclick="switchJourneyRole('operator')" id="role-btn-operator" class="px-4 py-2 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition">Operator Perspective</button>
+                    <button onclick="switchJourneyRole('owner')" id="role-btn-owner" class="px-4 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white shadow transition cursor-pointer">Owner Perspective</button>
+                    <button onclick="switchJourneyRole('operator')" id="role-btn-operator" class="px-4 py-2 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition cursor-pointer">Operator Perspective</button>
                 </div>
             </div>
 
@@ -487,4 +487,174 @@
                         Stand with your counterpart in the shop lobby. Exchange SMS verification pins to instantly activate Stripe Connect split routing and start daily Plaid rent sweeps.
                     </p>
 
-                    <div class="grid grid-cols-1
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                            <span class="text-[10px] font-mono text-slate-500 block font-bold">Owner PIN (Simulated SMS)</span>
+                            <input type="text" readonly value="5291" class="bg-white border border-slate-300 rounded px-3 py-2 text-sm text-center font-bold tracking-widest text-emerald-700 w-full shadow-sm">
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                            <span class="text-[10px] font-mono text-slate-500 block font-bold">Operator PIN (Simulated SMS)</span>
+                            <input type="text" readonly value="8473" class="bg-white border border-slate-300 rounded px-3 py-2 text-sm text-center font-bold tracking-widest text-emerald-700 w-full shadow-sm">
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <input type="text" id="input-owner-pin" placeholder="Enter Owner PIN (5291)" class="flex-grow bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-900 font-bold text-center outline-none focus:border-emerald-600 shadow-sm">
+                        <input type="text" id="input-operator-pin" placeholder="Enter Operator PIN (8473)" class="flex-grow bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-900 font-bold text-center outline-none focus:border-emerald-600 shadow-sm">
+                        <button onclick="executeHandoffSwap()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-6 py-2.5 rounded-xl transition uppercase tracking-wider shadow cursor-pointer">
+                            Activate Terminal Swap
+                        </button>
+                    </div>
+
+                    <div id="handoff-success-alert" class="hidden bg-emerald-50 border border-emerald-200 p-4 rounded-xl text-emerald-800 text-center text-xs font-bold leading-relaxed shadow-sm">
+                        <i class="fa-solid fa-circle-check mr-1 text-emerald-600"></i> Handoff Completed Successfully! Daily split sweeps are live on your Vercel deployment.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-6 px-6 shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-500">
+            <div>
+                &copy; 2026 OpisMarket.ai Inc. All rights reserved. Vercel Production Suite.
+            </div>
+            <div class="text-[10px] italic text-slate-400 font-medium">
+                <span>Own the asset. Outsource the grind.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSector = 'auto';
+
+        // Sector selector logic
+        function selectSector(sector) {
+            currentSector = sector;
+            const sectors = ['auto', 'laundromat', 'hvac', 'vet', 'print'];
+            
+            sectors.forEach(s => {
+                const btn = document.getElementById(`sector-${s}`);
+                if (!btn) return;
+                if (s === sector) {
+                    btn.className = "p-3.5 rounded-xl border-2 border-emerald-600 bg-emerald-50/80 text-center shadow-sm transition";
+                } else {
+                    btn.className = "p-3.5 rounded-xl border border-slate-200 bg-white text-center opacity-70 hover:opacity-100 transition shadow-sm";
+                }
+            });
+
+            const actionBtns = document.getElementById('sector-action-buttons');
+            if (sector !== 'auto') {
+                triggerModal("Sector In Development", `The ${sector.toUpperCase()} sector is currently in our private pilot roadmap. You can test our fully fleshed-out Auto Repair marketplace and transition workflows right now!`, "fa-solid fa-clock text-amber-600");
+                if (actionBtns) actionBtns.classList.add('opacity-50', 'pointer-events-none');
+            } else {
+                if (actionBtns) actionBtns.classList.remove('opacity-50', 'pointer-events-none');
+            }
+        }
+
+        // View switching engine (Fixed to ensure seamless tab transitions)
+        function switchView(viewId) {
+            const views = ['home', 'taas', 'marketplace', 'journey'];
+            views.forEach(v => {
+                const el = document.getElementById(`view-${v}`);
+                if (el) el.classList.add('hidden');
+                const nav = document.getElementById(`nav-${v}`);
+                if (nav) nav.className = "px-3.5 py-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition";
+            });
+
+            const activeEl = document.getElementById(`view-${viewId}`);
+            if (activeEl) activeEl.classList.remove('hidden');
+            const activeNav = document.getElementById(`nav-${viewId}`);
+            if (activeNav) activeNav.className = "px-3.5 py-2 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 transition font-bold";
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Dual role switching for Verified Journey
+        function switchJourneyRole(role) {
+            const ownerPanel = document.getElementById('journey-owner-panel');
+            const operatorPanel = document.getElementById('journey-operator-panel');
+            const btnOwner = document.getElementById('role-btn-owner');
+            const btnOperator = document.getElementById('role-btn-operator');
+
+            const activeClass = "px-4 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white shadow transition cursor-pointer";
+            const inactiveClass = "px-4 py-2 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition cursor-pointer";
+
+            if (role === 'owner') {
+                if (ownerPanel) ownerPanel.classList.remove('hidden');
+                if (operatorPanel) operatorPanel.classList.add('hidden');
+                if (btnOwner) btnOwner.className = activeClass;
+                if (btnOperator) btnOperator.className = inactiveClass;
+            } else {
+                if (ownerPanel) ownerPanel.classList.add('hidden');
+                if (operatorPanel) operatorPanel.classList.remove('hidden');
+                if (btnOperator) btnOperator.className = activeClass;
+                if (btnOwner) btnOwner.className = inactiveClass;
+            }
+        }
+
+        // Modal triggers
+        function triggerModal(title, body, iconClass = "fa-solid fa-bolt text-emerald-600") {
+            const modal = document.getElementById('modal-container');
+            const titleEl = document.getElementById('modal-title');
+            const bodyEl = document.getElementById('modal-body');
+            const iconEl = document.getElementById('modal-icon');
+
+            if (titleEl) titleEl.innerText = title;
+            if (bodyEl) bodyEl.innerText = body;
+            if (iconEl) iconEl.innerHTML = `<i class="${iconClass}"></i>`;
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal-container');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        // TaaS Actions (Auto Repair Themed)
+        function executeTaasAction(moduleType) {
+            switch(moduleType) {
+                case 'audit':
+                    triggerModal("AI EBITDA Audit ($199)", "QuickBooks statements successfully ingested. Computer vision OCR has extracted automotive P&L summaries and generated your Platform Verified Financial report PDF.", "fa-solid fa-file-invoice text-emerald-600");
+                    break;
+                case 'shield':
+                    triggerModal("AssetCo S-Corp Shield ($499)", "Corporate restructuring initialized. Real estate property and hydraulic lifts securely isolated in AssetCo; new operating OpCo LLC instantiated.", "fa-solid fa-shield-halved text-emerald-600");
+                    break;
+                case 'sublease':
+                    triggerModal("DIY Sublease Contract ($399)", "State-compliant commercial sublease generated with trade warranties, UCC-1 lift covenants, and mandatory CPA retention clauses.", "fa-solid fa-file-contract text-emerald-600");
+                    break;
+                case 'pos':
+                    triggerModal("Cloud POS Transition Service", "Cloud migration workflow initialized. Legacy local databases and customer history scheduled for syncing to Tekmetric or Shopmonkey cloud infrastructure.", "fa-solid fa-cloud-arrow-up text-emerald-600");
+                    break;
+                case 'ledger':
+                    triggerModal("Plaid Sweep Ledger ($149/mo)", "Plaid bank link bonded to OpCo checking account. Automated nightly split sweeps configured successfully for shop rent floors.", "fa-solid fa-link text-emerald-600");
+                    break;
+            }
+        }
+
+        // Marketplace match action (Triggers Transition to Journey)
+        function initiateMatch(shopName, terms) {
+            const titleEl = document.getElementById('journey-header-title');
+            if (titleEl) titleEl.innerText = `Match Established: ${shopName} (${terms})`;
+            switchView('journey');
+            triggerModal("Match Confirmed!", `You have successfully matched with ${shopName}. Follow the secure execution workflow below to finalize your transition.`, "fa-solid fa-circle-check text-emerald-600");
+        }
+
+        // Handoff Handshake Swap
+        function executeHandoffSwap() {
+            const oPin = document.getElementById('input-owner-pin').value.trim();
+            const opPin = document.getElementById('input-operator-pin').value.trim();
+            const alertBox = document.getElementById('handoff-success-alert');
+
+            if (oPin === '5291' && opPin === '8473') {
+                if (alertBox) alertBox.classList.remove('hidden');
+                triggerModal("Terminal Swap Confirmed!", "Crossed PINs verified successfully. Stripe Connect custom account active and Plaid daily rent split sweeps are now live.", "fa-solid fa-circle-check text-emerald-600");
+            } else {
+                triggerModal("PIN Verification Error", "Incorrect verification codes. Please cross-exchange SMS pins with your matching counterpart (Owner: 5291, Operator: 8473).", "fa-solid fa-triangle-exclamation text-rose-600", true);
+            }
+        }
+    </script>
+</body>
+</html>
