@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpisMarket.ai: Own the Asset. Outsource the Grind.</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter & Playfair Display for a Classic Professional Feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
@@ -70,7 +67,6 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-emerald-100 selection:text-emerald-800">
 
-    <!-- Global Professional Header -->
     <header class="border-b border-slate-200 bg-white/90 backdrop-blur-md sticky top-0 z-50 px-6 py-4 shadow-sm">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-3 cursor-pointer" onclick="switchView('home')">
@@ -92,7 +88,6 @@
         </div>
     </header>
 
-    <!-- Custom Modal Container -->
     <div id="modal-container" class="fixed inset-0 z-50 flex items-center justify-center px-4 bg-slate-900/50 backdrop-blur-sm hidden">
         <div class="bg-white border border-slate-200 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative space-y-4">
             <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 transition">
@@ -111,12 +106,9 @@
         </div>
     </div>
 
-    <!-- MAIN VIEW CONTAINER -->
     <main class="max-w-6xl mx-auto px-6 py-10 flex-grow w-full">
 
-        <!-- VIEW 1: HOME / LANDING PAGE & EMBEDDED IFRAME SIMULATOR -->
         <section id="view-home" class="space-y-12">
-            <!-- Hero Header -->
             <div class="text-center space-y-5 max-w-4xl mx-auto py-6">
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider shadow-sm">
                     <i class="fa-solid fa-shield-halved text-emerald-600 text-xs"></i> Trusted Main Street Management Exchange
@@ -129,7 +121,6 @@
                     The premier marketplace where small business owners "lease" daily operations to expert managers. Owners secure guaranteed passive income; Operators build equity without debt.
                 </p>
 
-                <!-- Sector Selector Component -->
                 <div class="pt-6 max-w-3xl mx-auto space-y-3">
                     <span class="text-[11px] font-mono font-bold text-slate-500 uppercase tracking-widest block">Select Your Operating Sector</span>
                     <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
@@ -161,18 +152,18 @@
                     </div>
                 </div>
 
-                <!-- Dual Transition Path Actions -->
-                <div id="sector-action-buttons" class="flex flex-wrap justify-center gap-3 pt-6">
-                    <button onclick="switchView('taas')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-6 py-3 rounded-xl transition shadow-md uppercase tracking-wider flex items-center gap-2">
-                        <i class="fa-solid fa-screwdriver-wrench"></i> Option 1: TaaS / SaaS Transition Suite
+                <div id="sector-action-buttons" class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 max-w-2xl mx-auto">
+                    <button onclick="switchView('taas')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs p-4 rounded-xl transition shadow-md uppercase tracking-wider flex flex-col items-center justify-center gap-1.5 text-center">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-screwdriver-wrench"></i> Option 1: TaaS / SaaS Suite</span>
+                        <span class="text-[10px] font-normal tracking-normal text-emerald-100 normal-case">Click this if you are just preparing for transition</span>
                     </button>
-                    <button onclick="switchView('marketplace')" class="bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs px-6 py-3 rounded-xl border border-slate-300 transition uppercase tracking-wider shadow-sm flex items-center gap-2">
-                        <i class="fa-solid fa-store text-emerald-600"></i> Option 2: Operator Match / Marketplace
+                    <button onclick="switchView('marketplace')" class="bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs p-4 rounded-xl border border-slate-300 transition uppercase tracking-wider shadow-sm flex flex-col items-center justify-center gap-1.5 text-center">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-store text-emerald-600"></i> Option 2: Operator Match</span>
+                        <span class="text-[10px] font-normal tracking-normal text-slate-500 normal-case">I'm ready for transition, find me an operator</span>
                     </button>
                 </div>
             </div>
 
-            <!-- EMBEDDED IFRAME SIMULATOR (opis-simulator.vercel.app) -->
             <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 space-y-6 shadow-xl">
                 <div class="max-w-3xl mx-auto text-center space-y-3 mb-4">
                     <p class="text-sm text-slate-600 leading-relaxed">
@@ -193,14 +184,12 @@
                     </a>
                 </div>
 
-                <!-- Responsive Iframe Container -->
                 <div class="w-full bg-slate-100 border border-slate-200 rounded-2xl overflow-hidden shadow-inner relative" style="height: 750px;">
                     <iframe src="https://opis-simulator.vercel.app/" class="w-full h-full border-0" title="Opis Live Financial Simulator"></iframe>
                 </div>
             </div>
         </section>
 
-        <!-- VIEW 2: TAAS / SAAS SERVICES SUITE (TRANSITION OPTION 1 - AUTO REPAIR) -->
         <section id="view-taas" class="space-y-8 hidden animate-fade-in">
             <div class="border-b border-slate-200 pb-4">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold uppercase tracking-wider mb-2 shadow-sm">
@@ -212,10 +201,8 @@
                 </p>
             </div>
 
-            <!-- 5 Grid Service Modules (Separating Cloud POS Transition and Plaid Ledger) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- Module A -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between space-y-4 shadow-sm hover:shadow-md hover:border-emerald-300 transition">
                     <div class="space-y-2">
                         <div class="flex justify-between items-center">
@@ -232,7 +219,6 @@
                     </button>
                 </div>
 
-                <!-- Module B -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between space-y-4 shadow-sm hover:shadow-md hover:border-emerald-300 transition">
                     <div class="space-y-2">
                         <div class="flex justify-between items-center">
@@ -249,7 +235,6 @@
                     </button>
                 </div>
 
-                <!-- Module C -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between space-y-4 shadow-sm hover:shadow-md hover:border-emerald-300 transition">
                     <div class="space-y-2">
                         <div class="flex justify-between items-center">
@@ -266,7 +251,6 @@
                     </button>
                 </div>
 
-                <!-- Module D (Cloud POS Transition as a Service - Separated) -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between space-y-4 shadow-sm hover:shadow-md hover:border-emerald-300 transition">
                     <div class="space-y-2">
                         <div class="flex justify-between items-center">
@@ -283,7 +267,6 @@
                     </button>
                 </div>
 
-                <!-- Module E (Plaid Sweep Ledger - Separated) -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between space-y-4 shadow-sm hover:shadow-md hover:border-emerald-300 transition">
                     <div class="space-y-2">
                         <div class="flex justify-between items-center">
@@ -303,7 +286,6 @@
             </div>
         </section>
 
-        <!-- VIEW 3: MATCHMAKING EXCHANGE (TRANSITION OPTION 2 - SURPLUS STYLE) -->
         <section id="view-marketplace" class="space-y-8 hidden animate-fade-in">
             <div class="border-b border-slate-200 pb-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                 <div>
@@ -320,10 +302,8 @@
                 </button>
             </div>
 
-            <!-- Marketplace Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                <!-- Listing 1 (Auto Repair - Fully Fleshed Out) -->
                 <div class="bg-white border-2 border-emerald-500/50 rounded-2xl overflow-hidden shadow-md flex flex-col justify-between">
                     <div class="p-5 space-y-3">
                         <div class="flex justify-between items-center">
@@ -346,7 +326,6 @@
                     </div>
                 </div>
 
-                <!-- Listing 2 (WIP Industry: Laundromat) -->
                 <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between opacity-80">
                     <div class="p-5 space-y-3">
                         <div class="flex justify-between items-center">
@@ -369,7 +348,6 @@
                     </div>
                 </div>
 
-                <!-- Listing 3 (WIP Industry: HVAC Fleet) -->
                 <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between opacity-80">
                     <div class="p-5 space-y-3">
                         <div class="flex justify-between items-center">
@@ -395,7 +373,6 @@
             </div>
         </section>
 
-        <!-- VIEW 4: FULL OWNER & OPERATOR CUSTOMER JOURNEY -->
         <section id="view-journey" class="space-y-8 hidden animate-fade-in">
             <div class="border-b border-slate-200 pb-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                 <div>
@@ -407,14 +384,12 @@
                         Explore the full verified customer journey covering both Owner and Operator perspectives: AssetCo/OpCo setup, Plaid ledger binding, and the SMS Two-Key Handshake.
                     </p>
                 </div>
-                <!-- Dual Solution Role Toggles -->
                 <div class="flex p-1 bg-slate-100 rounded-xl border border-slate-200 shadow-sm">
                     <button onclick="switchJourneyRole('owner')" id="role-btn-owner" class="px-4 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white shadow transition">Owner Perspective</button>
                     <button onclick="switchJourneyRole('operator')" id="role-btn-operator" class="px-4 py-2 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition">Operator Perspective</button>
                 </div>
             </div>
 
-            <!-- OWNER SOLUTION WORKSPACE CONTAINER -->
             <div id="journey-owner-panel" class="space-y-6">
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 space-y-4 shadow-sm">
                     <div class="flex items-center gap-2 text-emerald-700">
@@ -441,7 +416,6 @@
                 </div>
             </div>
 
-            <!-- OPERATOR SOLUTION WORKSPACE CONTAINER -->
             <div id="journey-operator-panel" class="space-y-6 hidden">
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 space-y-4 shadow-sm">
                     <div class="flex items-center gap-2 text-emerald-700">
@@ -468,10 +442,8 @@
                 </div>
             </div>
 
-            <!-- Interactive Milestone Progression Steps (Shared Terminal Handoff) -->
             <div class="space-y-6">
                 
-                <!-- Step 1 -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 space-y-3 shadow-sm">
                     <div class="flex justify-between items-center">
                         <span class="text-[9px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">MILESTONE 1</span>
@@ -483,7 +455,6 @@
                     </p>
                 </div>
 
-                <!-- Step 2 -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 space-y-3 shadow-sm">
                     <div class="flex justify-between items-center">
                         <span class="text-[9px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">MILESTONE 2</span>
@@ -495,7 +466,6 @@
                     </p>
                 </div>
 
-                <!-- Step 2.5: Private Equity & Valuation Criteria (Enhanced with key buying signals and multi-x purchasing multiples) -->
                 <div class="bg-emerald-950 text-emerald-100 border border-emerald-800 rounded-2xl p-6 space-y-4 shadow-md">
                     <div class="flex justify-between items-center">
                         <span class="text-[9px] font-mono font-bold bg-emerald-800 text-emerald-200 px-2.5 py-0.5 rounded">INSTITUTIONAL CRITERIA</span>
@@ -503,11 +473,10 @@
                     </div>
                     <h3 class="text-base font-serif font-bold text-white">Private Equity Acquisition Standards & Purchasing Multiples</h3>
                     <p class="text-xs text-slate-300 leading-relaxed">
-                        Institutional buyers and private equity firms evaluate several critical success factors before committing to a buyout: <strong>clean auditable financial records, system-driven cloud operations (such as Tekmetric or Shopmonkey), clear separation of real estate assets (AssetCo), and low founder dependency</strong>[cite: 1]. When a business fits these strict private equity criteria, the purchasing multiple commands <strong>many x EBITDA</strong>, maximizing enterprise exit value.
+                        Institutional buyers and private equity firms evaluate several critical success factors before committing to a buyout: <strong>clean auditable financial records, system-driven cloud operations (such as Tekmetric or Shopmonkey), clear separation of real estate assets (AssetCo), and low founder dependency</strong>. When a business fits these strict private equity criteria, the purchasing multiple commands <strong>many x EBITDA</strong>, maximizing enterprise exit value.
                     </p>
                 </div>
 
-                <!-- Step 3 (Interactive PIN Handshake Swapper) -->
                 <div class="bg-white border-2 border-emerald-600/30 rounded-2xl p-6 space-y-4 shadow-md">
                     <div class="flex justify-between items-center">
                         <span class="text-[9px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">MILESTONE 3 (FINAL)</span>
@@ -518,176 +487,4 @@
                         Stand with your counterpart in the shop lobby. Exchange SMS verification pins to instantly activate Stripe Connect split routing and start daily Plaid rent sweeps.
                     </p>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
-                            <span class="text-[10px] font-mono text-slate-500 block font-bold">Owner PIN (Simulated SMS)</span>
-                            <input type="text" readonly value="5291" class="bg-white border border-slate-300 rounded px-3 py-2 text-sm text-center font-bold tracking-widest text-emerald-700 w-full shadow-sm">
-                        </div>
-                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
-                            <span class="text-[10px] font-mono text-slate-500 block font-bold">Operator PIN (Simulated SMS)</span>
-                            <input type="text" readonly value="8473" class="bg-white border border-slate-300 rounded px-3 py-2 text-sm text-center font-bold tracking-widest text-emerald-700 w-full shadow-sm">
-                        </div>
-                    </div>
-
-                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
-                        <input type="text" id="input-owner-pin" placeholder="Enter Owner PIN (5291)" class="flex-grow bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-900 font-bold text-center outline-none focus:border-emerald-600 shadow-sm">
-                        <input type="text" id="input-operator-pin" placeholder="Enter Operator PIN (8473)" class="flex-grow bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-900 font-bold text-center outline-none focus:border-emerald-600 shadow-sm">
-                        <button onclick="executeHandoffSwap()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-6 py-2.5 rounded-xl transition uppercase tracking-wider shadow">
-                            Activate Terminal Swap
-                        </button>
-                    </div>
-
-                    <div id="handoff-success-alert" class="hidden bg-emerald-50 border border-emerald-200 p-4 rounded-xl text-emerald-800 text-center text-xs font-bold leading-relaxed shadow-sm">
-                        <i class="fa-solid fa-circle-check mr-1 text-emerald-600"></i> Handoff Completed Successfully! Daily split sweeps are live on your Vercel deployment.
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Global Footer -->
-    <footer class="border-t border-slate-200 bg-white py-6 px-6 shadow-inner">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-500">
-            <div>
-                &copy; 2026 OpisMarket.ai Inc. All rights reserved. Vercel Production Suite.
-            </div>
-            <div class="text-[10px] italic text-slate-400 font-medium">
-                <span>Own the asset. Outsource the grind.</span>
-            </div>
-        </div>
-    </footer>
-
-    <!-- INTERACTIVE APP LOGIC -->
-    <script>
-        let currentSector = 'auto';
-
-        // Sector selector logic
-        function selectSector(sector) {
-            currentSector = sector;
-            const sectors = ['auto', 'laundromat', 'hvac', 'vet', 'print'];
-            
-            sectors.forEach(s => {
-                const btn = document.getElementById(`sector-${s}`);
-                if (!btn) return;
-                if (s === sector) {
-                    btn.className = "p-3.5 rounded-xl border-2 border-emerald-600 bg-emerald-50/80 text-center shadow-sm transition";
-                } else {
-                    btn.className = "p-3.5 rounded-xl border border-slate-200 bg-white text-center opacity-70 hover:opacity-100 transition shadow-sm";
-                }
-            });
-
-            const actionBtns = document.getElementById('sector-action-buttons');
-            if (sector !== 'auto') {
-                triggerModal("Sector In Development", `The ${sector.toUpperCase()} sector is currently in our private pilot roadmap. You can test our fully fleshed-out Auto Repair marketplace and transition workflows right now!`, "fa-solid fa-clock text-amber-600");
-                if (actionBtns) actionBtns.classList.add('opacity-50', 'pointer-events-none');
-            } else {
-                if (actionBtns) actionBtns.classList.remove('opacity-50', 'pointer-events-none');
-            }
-        }
-
-        // View switching engine
-        function switchView(viewId) {
-            const views = ['home', 'taas', 'marketplace', 'journey'];
-            views.forEach(v => {
-                const el = document.getElementById(`view-${v}`);
-                if (el) el.classList.add('hidden');
-                const nav = document.getElementById(`nav-${v}`);
-                if (nav) nav.className = "px-3.5 py-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition";
-            });
-
-            const activeEl = document.getElementById(`view-${viewId}`);
-            if (activeEl) activeEl.classList.remove('hidden');
-            const activeNav = document.getElementById(`nav-${viewId}`);
-            if (activeNav) activeNav.className = "px-3.5 py-2 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 transition font-bold";
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        // Dual role switching for Verified Journey
-        function switchJourneyRole(role) {
-            const ownerPanel = document.getElementById('journey-owner-panel');
-            const operatorPanel = document.getElementById('journey-operator-panel');
-            const btnOwner = document.getElementById('role-btn-owner');
-            const btnOperator = document.getElementById('role-btn-operator');
-
-            const activeClass = "px-4 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white shadow transition";
-            const inactiveClass = "px-4 py-2 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition";
-
-            if (role === 'owner') {
-                if (ownerPanel) ownerPanel.classList.remove('hidden');
-                if (operatorPanel) operatorPanel.classList.add('hidden');
-                if (btnOwner) btnOwner.className = activeClass;
-                if (btnOperator) btnOperator.className = inactiveClass;
-            } else {
-                if (ownerPanel) ownerPanel.classList.add('hidden');
-                if (operatorPanel) operatorPanel.classList.remove('hidden');
-                if (btnOperator) btnOperator.className = activeClass;
-                if (btnOwner) btnOwner.className = inactiveClass;
-            }
-        }
-
-        // Modal triggers
-        function triggerModal(title, body, iconClass = "fa-solid fa-bolt text-emerald-600") {
-            const modal = document.getElementById('modal-container');
-            const titleEl = document.getElementById('modal-title');
-            const bodyEl = document.getElementById('modal-body');
-            const iconEl = document.getElementById('modal-icon');
-
-            if (titleEl) titleEl.innerText = title;
-            if (bodyEl) bodyEl.innerText = body;
-            if (iconEl) iconEl.innerHTML = `<i class="${iconClass}"></i>`;
-            if (modal) modal.classList.remove('hidden');
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('modal-container');
-            if (modal) modal.classList.add('hidden');
-        }
-
-        // TaaS Actions (Auto Repair Themed)
-        function executeTaasAction(moduleType) {
-            switch(moduleType) {
-                case 'audit':
-                    triggerModal("AI EBITDA Audit ($199)", "QuickBooks statements successfully ingested. Computer vision OCR has extracted automotive P&L summaries and generated your Platform Verified Financial report PDF.", "fa-solid fa-file-invoice text-emerald-600");
-                    break;
-                case 'shield':
-                    triggerModal("AssetCo S-Corp Shield ($499)", "Corporate restructuring initialized. Real estate property and hydraulic lifts securely isolated in AssetCo; new operating OpCo LLC instantiated.", "fa-solid fa-shield-halved text-emerald-600");
-                    break;
-                case 'sublease':
-                    triggerModal("DIY Sublease Contract ($399)", "State-compliant commercial sublease generated with trade warranties, UCC-1 lift covenants, and mandatory CPA retention clauses.", "fa-solid fa-file-contract text-emerald-600");
-                    break;
-                case 'pos':
-                    triggerModal("Cloud POS Transition Service", "Cloud migration workflow initialized. Legacy local databases and customer history scheduled for syncing to Tekmetric or Shopmonkey cloud infrastructure.", "fa-solid fa-cloud-arrow-up text-emerald-600");
-                    break;
-                case 'ledger':
-                    triggerModal("Plaid Sweep Ledger ($149/mo)", "Plaid bank link bonded to OpCo checking account. Automated nightly split sweeps configured successfully for shop rent floors.", "fa-solid fa-link text-emerald-600");
-                    break;
-            }
-        }
-
-        // Marketplace match action (Triggers Transition to Journey)
-        function initiateMatch(shopName, terms) {
-            const titleEl = document.getElementById('journey-header-title');
-            if (titleEl) titleEl.innerText = `Match Established: ${shopName} (${terms})`;
-            switchView('journey');
-            triggerModal("Match Confirmed!", `You have successfully matched with ${shopName}. Follow the secure execution workflow below to finalize your transition.`, "fa-solid fa-circle-check text-emerald-600");
-        }
-
-        // Handoff Handshake Swap
-        function executeHandoffSwap() {
-            const oPin = document.getElementById('input-owner-pin').value.trim();
-            const opPin = document.getElementById('input-operator-pin').value.trim();
-            const alertBox = document.getElementById('handoff-success-alert');
-
-            if (oPin === '5291' && opPin === '8473') {
-                if (alertBox) alertBox.classList.remove('hidden');
-                triggerModal("Terminal Swap Confirmed!", "Crossed PINs verified successfully. Stripe Connect custom account active and Plaid daily rent split sweeps are now live.", "fa-solid fa-circle-check text-emerald-600");
-            } else {
-                triggerModal("PIN Verification Error", "Incorrect verification codes. Please cross-exchange SMS pins with your matching counterpart (Owner: 5291, Operator: 8473).", "fa-solid fa-triangle-exclamation text-rose-600", true);
-            }
-        }
-    </script>
-</body>
-</html>
+                    <div class="grid grid-cols-1
